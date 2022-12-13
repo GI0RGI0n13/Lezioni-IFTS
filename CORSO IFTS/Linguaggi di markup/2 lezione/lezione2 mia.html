@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--premendo tab dopo < si autocompila la parte iniziale-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 2</title>
+</head>
+<body>
+    <h1 title="lezione 2" id="title-1">Lezione 2</h1>
+    <section id="sect-operatore"></section> <!--il tag <section è una specie di divisione, indica una sezione di una pagina>-->
+    <!--il tag id è l'identificativo di un elemento ed è unico-->
+    <h2 id="operatore" class="ifts">Sono operatore</h2>
+        <p>Abito a Rimini e mi piace la maionese</p>
+        <p>Ho un gatto di nome Micio</p>
+    <h2 id="ciao" class="ifts">Sono ciao</h2>
+        <p style="color: rgb(18, 221, 52);">Abito a Cattolica e mi piace il gelato</p>
+        <p>Mi piace fare <strong>sport</strong>
+            <br> gioco a <b>calcio</b></p>
+            <p>Vorrei imparare il <abbr title="cascading style sheet">CSS</abbr></p>
+        <!--in <abbr> si mettono le abbreviazioni, prima di mette il title per indicare la parola intera, poi la sigla-->
+        <!--mettere una parola fra <b> e </b> rende la parola in grassetto, l'alternativa è usare il tag <strong>-->
+        <!--il tag <br> è autochiudente e serve per andare a capo graficamente-->
+        <address>via Verdi n.15</address>
+        <p>Quando ho sete bevo H<sub>2</sub>O</p>
+        <!--sub e sup servono per mettere le parole su o sotto-->
+    <h3 id="aooo" class="ifts">Sono aooo</h3>
+        <p>Abito a Santarcangelo e mi piace la pizza</p>
+        <section id="filippo">
+         <pre>
+            8 spazi a dx
+    allineato a colonna sinistra e a capo
+                12 spazi a dx e a capo
+        </pre>
+        <div>
+            per realizzare un tag div devo scrivere &lt;div&gt;
+            &ge; &le; &raquo; &laquo; &copy; &reg;
+            <!--serve per rendere visibili simboli che sarebbero interpretabili dall'editor-->
+        </div>
+        </section>
+            <section id="Luca">
+            <p>Parliamo di elenchi, esistono quelli ol ul dt</p>
+            <ul>
+                <li>ul = lista non ordinata</li>
+                <li>ol = lista ordinata</li>
+                <li>dl = lista di definizione</li>
+            </ul>
+            <p>oggi ho fatto tante cose:</p>
+            <ol>
+                <li>mi sono alzato alle 7</li>
+                <li>ho mangiato un panino</li>
+            </ol>
+            <p>Claudio Rossi mi ha parlato di</p>
+            <dt>app ibride</dt>
+            <dd>sono delle app dove il codice è multipiattaforma</dd> <!--<dd> indica una specifica di <dt>-->
+            <dt>controllo di versione</dt>
+            <dd>è importante avere informazioni sulla versione e l'autore di una versione</dd>
+            <dt>ciclo di software</dt>
+            <dd>il software viene sviluppato, consegnato, <mark>mantenuto</mark>, eccetera</dd>
+            <!--i tag delle liste servono per ordinare le varie frasi-->
+            <!--il tag <mark> </mark> serve per evidenziae una determinata parola-->
+            <div>vicino a casa mia c'è un Parco con <del>le altalene</del><ins>gli scivoli</ins>  </div>
+            <!--il tag <del> serve per barrare la parola, il tag <ins> serve per sottolinearla>-->
+        </section>
+        <span>quando ho sete bevo H<sub>2</sub>O</span>
+        <span>mi piace 
+            il 
+            marchio Eventi<sup>2</sup></span>
+        <code>il tag sup mette un valore ad apice</code>
+        <!--il tag <span> serve ad attaccare due frasi senza andare a capo, utile per separare vari elementi nella stessa frase-->
+        <!--il tag <code> serve per usare il font tipico del coding-->
+
+    <!--<pre> serve per rendere graficamente visibile gli spazi-->
+        <section id="prima-tabella">
+            <table border="1" style="width:300px"> <!--definisce la tabella-->
+                <caption>Tabella ingredienti kinder cereali 100g</caption> <!--facoltativo, è una mini descrizione della tabella-->
+                <colgroup>
+                    <col span="1" style="background-color: aquamarine;">
+                </colgroup> <!--questo tag definisce, in questo caso, il colore della prima colonna, serve a formattarle-->
+                <thead> <!--è il titolo della tabella. la riga orrizontale in alto-->
+                    <th>Ingrediente</th>
+                    <th>%</th>
+                    <th>Qta</th> <!--<th> serve per i titoli della riga superiore-->
+                </thead>
+                <tbody> <!--è la parte della tabella dopo il titolo-->
+                    <tr> <!--serve per le varie righe orrizontali della tabella-->-->
+                        <td>Cioccolato</td> <!--indica il contenuto delle righe-->
+                        <td>33%</td>
+                        <td>25g</td>
+                        <td rowspan="2"></td><!--serve a determinare quante colonne ocuupa una riga-->
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>12%</td>
+                        <td>
+                            <table border="1" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>in polvere</td>
+                                    <td>3g</td>
+                                </tr>
+                                <tr>
+                                    <td>parz. scremato</td>
+                                    <td>5ml</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">burro di cacao</td>
+                        <td>2%</td>
+                        <td>4g</td>
+                    </tr>
+                    <tr>
+                        <td>6%</td>
+                        <td>8g</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">può contenere tracce di frutta secca</td>
+                    </tr>
+                    <tfoot><!--è il piede della tabella, serve a riassumere-->
+                        <tr>
+                            <td>Totale:</td>
+                            <td>47%</td>
+                            <td>32g</td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>

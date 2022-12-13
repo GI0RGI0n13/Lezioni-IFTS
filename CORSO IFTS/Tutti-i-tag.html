@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- questo è il tag iniziale. Tutti i codici verranno scritti qui dentro, fra <html> </html>-->
+<!--premendo tab dopo ! si autocompila la parte iniziale-->
+<html lang="it"><!--questo tag indica la lingua del documento, può contenerne diverse-->
+
+<head><!--in <head> </head> si inseriscono tutte le informazioni utili per la gestione della pagina (titolo, set di caratteri, stili, scripts, ecc...)-->
+    <meta charset="UTF-8"> <!--sta ad indicare la codifica che avrà la pagina, in questo caso in 8 bit-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--"viewport" serve ad adattare le dimensioni della pagina alle dimensioni dello schermo del dispositivo, content= sta per la misura da utilizzare -->
+    <meta name="description" content="APPUNTI LEZIONE 1"> <!--serve per descrivere il contenuto del documento-->
+    <meta name="author" content="Giorgio Margarint"> <!-- serve per indicare l'autore della pagina-->
+    <title>Document</title> <!-- fra <title> </title> ci va il titolo del documento in questione-->
+
+</head>
+<body> <!--in questo tag ci andrà tutto il contenuto della pagina dal punto di vista grafico-->
+
+     <h1 title="PRIMO TITOLO DELLA PAGINA"
+     draggable="true">PRIMO TITOLO DELLA PAGINA</h1> <!--<h1> è un header (titolo), possono essercene massimo 6 e saranno sempre più piccoli-->
+        <!--draggable="true/false" rende trascinabile o meno ununa scritta-->
+        <p
+                onclick="alert('testo che appare quando clicchi')"
+                style="color: brown;"
+                data-code="01234"
+                data-indirizzo="Via Casuale">
+                <!--onclick="alert" fa apparire un pop-up cliccando la scritta in <p>-->
+                <!--style modifica lo stile della scritta, in questo caso è un colore ed è marrone-->
+                <!--data- serve a dare informazioni al testo, in questo caso un indirizzo-->
+        >testo casuale</p> <!--<p> si usa per indicare un paragrafo-->
+            
+            <div></div> <!--serve per dividere in vareie sezioni il testo-->
+            <section></section> <!--serve per dividere in sezioni il testo-->
+            <section id="NOME DELLA SEZIONE" class="identificativi"></section> <!--il tag id serve per dare un'identità unica a un elemento, il tag class per darle una classe-->
+            <strong>GRASSETTO</strong> <!--serVe a rendere in grassetto una scritts--> <b>GRASSETTO</b> <!--Serve a rendere la parola in grassetto-->
+            <abbr title="ABBREVIAZIONE">ABBRV</abbr> <!--serve per le abbreviazioni, nel title si mette la parola intera, alla fine si mette la parola abbreviata-->
+            <br> <!--è un tag autochiudente e serve per andare a capo con una frase, forzatamente-->
+            <address>Via Casuale</address> <!--è l'indirizzo di un paragrafo-->
+            <sub>SOTTO IN PICCOLO</sub> <!--rende le parole scritte in mezzo piccole e più in basso della scritta principale-->
+            <sup>SOPRA IN PICCOLO</sup> <!--rende le parole scritte in mezzo piccole e più in su della scritta principale-->
+            <pre>SèAZI VISIBILI GRAFICAMENTE</pre> <!--usando lo spazio o i tab dopo essere andati a capo, saranno visibili gli spazi-->
+            &lt; &gt; &ge; &le; &raquo; &laquo; &copy; &reg; <!--< > ≥ ≤ » « © ®-->
+            <ul>INIZIO ELENCO NON IMPORTANTE</ul> <!--serve per iniziare un elenco in cui l'ordine delle cose in lista non è importante-->
+            <ol>INIZIO ELENCO NUMERATO</ol> <!--serve per iniziare un elenco numerato-->
+            <dt>INIZIO ELENCO DESCRITTIVO</dt><dd>DESCRIZIONE DELL'ELEMENTO</dd> <!--inizio lenco in cui ogni elemento avrà un <dd> come descrizione-->
+            <del>BARRARE</del> <!--serve per barrare le parole-->
+            <ins>SOTTOLINEARE</ins> <!--serve per sottolineare la parola-->
+            <code>SCRITTURA IN CODICE</code> <!--serve per utilizzare il carattere in codice-->
+            <span>ATTACCARE/SEPARARE IN ELEMENTI</span> <!--serve per attaccare nella stessa riga varie frasi senza andare a capo o per separare i vari elementi nella stessa riga-->
+            <table>TABELLA</table> <!--serve per iniziare una tabella-->
+            <table border="2"></table> <!--<!--border inserisce i bordi nella tabella-->
+            <table style="width: 300px;"></table> <!--style width determina la grandezza della tabella-->
+            <table cellpadding="0"></table> <!--è il quantitativo di spazio che le parole hanno nella tabella in tutte le direzioni-->
+            <table cellspacing="1"></table> <!--è ll quantitativo di spazio che le parole hanno nella tabella, nella parte destra-->
+            <caption>TITOLO FACOLTATIVO PRIMA DELLA TABELLA</caption> <!--facoltativo, è una mini descrizione della tabella-->
+            <colgroup>FORMATTAZIONE TABELLE</colgroup> <!--serve a formattare le tabelle, personalizzandole-->
+            <col span="1/2/3"> <!--determina quante colonne sarà lunga una riga-->
+            <thead>PRIMA RIGA DELLA TABELLA</thead> <!--è la prima riga della tabella, <th> ci saranno al suo interno, più colonne ci saranno-->
+                <th>ELEMENTI PRIMA RIGA</th> <!--vanno dentro il thead-->
+            <tbody>RESTO DELLA COLONNA</tbody> <!--qui dentro si inseriranno le varie righe-->
+                <tr>PRIMA, SECONDA,TERZA RIGA, ECC...</tr> <!--qui dentro ci andranno i td-->
+                    <td>ELEMENTI DELLA RIGA</td> <!--dentro ci vanno i dati-->
+            
+            
+
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 3</title>
+</head>
+<body>
+    <h2>Menù</h2>
+    <ul>
+        <li><a href="#liste">Liste</a></li>
+        <li><a href="#tabella">Tabella</a></li>
+        <li><a href="#links">Links</a></li>
+    </ul>
+    <h2 id="liste">Liste</h2>
+    <ol>
+        <li>punto 1</li>
+        <li>punto 2
+            <ul>
+                <li>Punto 2.1</li>
+                <li>Punto 2.2</li>
+                <li>Punto 2.3</li>
+            </ul>
+        </li>
+    </ol>
+    <h2 id="tabella">Tabelle</h2>
+    <table border="1">
+        <caption>Classifica Sportiva</caption>
+        <thead>
+            <th>Squadra</th>
+            <th>Punti</th>
+            <th>Partite Giocate</th>
+        </thead>
+        <tbody>
+            <tr>
+               <td rowspan="2">Rimini</td> 
+               <td>40</td> 
+               <td>18</td> 
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>16</td>
+            </tr>
+            <tr>
+               <td>Riccione</td> 
+               <td>35</td> 
+               <td>16</td> 
+            </tr>
+            <tr>
+               <td>Cattolica</td> 
+               <td>32</td> 
+               <td>16</td> 
+            </tr>
+            <tr>
+               <td>Viserba</td> 
+               <td>30</td> 
+               <td>17</td> 
+            </tr>
+            <tfoot>
+                <tr style="background-color: darkkhaki;">
+                    <td colspan="2">Partite Totali</td>
+                    <td>18</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    <h2 id="links">Links</h2>
+    <div><a href="files/lezione3a.html" rel="no-follow">Lezione 3a</a></div>
+    <div><a href="./files/lezione3b.html" target="_blank" accesskey="jz\">Lezione 3b</a></div>
+    <div><a href="./files/subfiles/lezione3c.html">Lezione 3c</a></div>
+</body>
+</html>
